@@ -21,7 +21,6 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="./beneficios.html">Beneficios</a></li>
-                    <!-- Dropdown Menu -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,14 +31,13 @@
                             <li><a class="dropdown-item" href="./explorar_perfiles.html">Perfiles Profesionales</a></li>
                         </ul>
                     </li>
-                    <!-- Dropdown Menu -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="dashboardDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Dashboard
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="./dashbard_organizacion.html">Organisativo</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="dashboardDropdown">
+                            <li><a class="dropdown-item" href="./dashboard_organizacion.html">Organizativo</a></li>
                             <li><a class="dropdown-item" href="./dashboard_graficas.html">Gráficas</a></li>
                         </ul>
                     </li>
@@ -54,9 +52,19 @@
     <section class="py-5">
         <div class="container">
             <h1 class="text-center mb-4">Dashboard Personal</h1>
+            <!-- Button Group -->
+            <div class="text-center mb-4">
+                <div class="btn-group" role="group" aria-label="Dashboard Options">
+                    <button type="button" class="btn btn-primary"
+                        onclick="scrollToSection('reminders')">Recordatorios</button>
+                    <button type="button" class="btn btn-secondary"
+                        onclick="scrollToSection('categories')">Categorías</button>
+                    <button type="button" class="btn btn-info" onclick="scrollToSection('calendar')">Calendario</button>
+                </div>
+            </div>
             <div class="row">
                 <!-- Recordatorios Automáticos -->
-                <div class="col-md-6">
+                <div class="col-md-6" id="reminders">
                     <div class="card shadow-sm mb-4">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-bell text-warning"></i> Recordatorios Automáticos
@@ -84,7 +92,7 @@
                 </div>
 
                 <!-- Categorías y Etiquetas -->
-                <div class="col-md-6">
+                <div class="col-md-6" id="categories">
                     <div class="card shadow-sm mb-4">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-tags text-success"></i> Categorías y Etiquetas</h5>
@@ -103,7 +111,7 @@
             </div>
 
             <!-- Integración con Calendarios -->
-            <div class="row">
+            <div class="row" id="calendar">
                 <div class="col-md-12">
                     <div class="card shadow-sm">
                         <div class="card-body">
@@ -113,8 +121,7 @@
                                 integrado:</p>
                             <iframe
                                 src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=America/Lima"
-                                style="border: 0" width="100%" height="400" frameborder="0" scrolling="no">
-                            </iframe>
+                                style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
                             <button class="btn btn-outline-primary mt-3">Sincronizar Calendario</button>
                         </div>
                     </div>
@@ -130,6 +137,13 @@
         </div>
     </footer>
 
+    <script>
+        // Scroll to Section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
