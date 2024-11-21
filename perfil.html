@@ -11,62 +11,66 @@
 
 <body class="bg-light">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand" href="#">Networking Pro</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#" aria-label="Networking Pro">Networking Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./beneficios.html">Beneficios</a></li>
-                    <!-- Dropdown Menu -->
+                    <li class="nav-item"><a class="nav-link" href="./index.html" aria-label="Inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./beneficios.html"
+                            aria-label="Beneficios">Beneficios</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Explorar opciones">
                             Explorar
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="./explorar_ofertas.html">Ofertas Laborales</a></li>
-                            <li><a class="dropdown-item" href="./explorar_perfiles.html">Perfiles Profesionales</a></li>
-                            <li><a class="dropdown-item" href="./grupos.html">Grupos</a></li>
+                            <li><a class="dropdown-item" href="./explorar_ofertas.html"
+                                    aria-label="Ofertas laborales">Ofertas Laborales</a></li>
+                            <li><a class="dropdown-item" href="./explorar_perfiles.html"
+                                    aria-label="Perfiles profesionales">Perfiles Profesionales</a></li>
+                            <li><a class="dropdown-item" href="./grupos.html" aria-label="Grupos">Grupos</a></li>
                         </ul>
                     </li>
-                    <!-- Dropdown Menu -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="dashboardDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Dashboard opciones">
                             Dashboard
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="./dashbard_organizacion.html">organizativo</a></li>
-                            <li><a class="dropdown-item" href="./dashboard_graficas.html">Gráficas</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="dashboardDropdown">
+                            <li><a class="dropdown-item" href="./dashbard_organizacion.html"
+                                    aria-label="Dashboard organizativo">Organizativo</a></li>
+                            <li><a class="dropdown-item" href="./dashboard_graficas.html"
+                                    aria-label="Dashboard gráficas">Gráficas</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="./perfil.html">Perfil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./login.html">Ingresar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./perfil.html" aria-label="Perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./login.html" aria-label="Ingresar">Ingresar</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Profile Section -->
-    <section class="py-5">
+    <section class="py-5" role="region" aria-labelledby="profile-heading">
         <div class="container">
-            <h1 class="text-center mb-4">Mi Perfil</h1>
+            <h1 id="profile-heading" class="text-center mb-4">Mi Perfil</h1>
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <!-- User Profile Card -->
-                    <div class="card shadow-sm mb-4">
+                    <div class="card shadow-sm mb-4" role="article" aria-labelledby="user-name">
                         <div class="card-body text-center">
                             <!-- Profile Picture -->
                             <div class="mb-3">
-                                <img src="./img/perfil3.jpg" alt="Foto de perfil" class="rounded-circle img-thumbnail"
-                                    style="width: 150px; height: 150px;">
+                                <img src="./img/perfil3.jpg" alt="Foto de perfil de Juan Pérez"
+                                    class="rounded-circle img-thumbnail" style="width: 150px; height: 150px;">
                             </div>
                             <!-- User Information -->
-                            <h4 class="card-title">Juan Pérez</h4>
+                            <h4 id="user-name" class="card-title">Juan Pérez</h4>
                             <p class="card-text"><strong>Correo:</strong> juan.perez@example.com</p>
                             <p class="card-text"><strong>Teléfono:</strong> +51 999 888 777</p>
                             <p class="card-text"><strong>Última Interacción:</strong> 15 de noviembre de 2024</p>
@@ -76,7 +80,8 @@
                             <!-- CV Section -->
                             <div class="mt-3">
                                 <h5>Currículum Vitae</h5>
-                                <a href="./CV.doc" class="btn btn-outline-primary" download>
+                                <a href="./CV.doc" class="btn btn-outline-primary" download
+                                    aria-label="Descargar currículum vitae de Juan Pérez">
                                     <i class="fas fa-file-download"></i> Descargar CV
                                 </a>
                             </div>
@@ -90,39 +95,46 @@
                     </div>
                     <!-- Edit Button -->
                     <div class="text-center">
-                        <button class="btn btn-primary" id="editButton" onclick="toggleEdit()">Editar Perfil</button>
+                        <button class="btn btn-primary" id="editButton" onclick="toggleEdit()"
+                            aria-label="Editar perfil">Editar Perfil</button>
                     </div>
                 </div>
             </div>
             <!-- Edit Form -->
-            <div class="row justify-content-center mt-4" id="editForm" style="display: none;">
+            <div class="row justify-content-center mt-4" id="editForm" style="display: none;" role="form"
+                aria-labelledby="edit-form-title">
                 <div class="col-md-8">
                     <div class="card shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Editar Información</h5>
+                            <h5 id="edit-form-title" class="card-title">Editar Información</h5>
                             <form>
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Nombre Completo</label>
-                                    <input type="text" class="form-control" id="name" value="Juan Pérez">
+                                    <input type="text" class="form-control" id="name" value="Juan Pérez"
+                                        aria-label="Nombre completo">
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Correo Electrónico</label>
-                                    <input type="email" class="form-control" id="email" value="juan.perez@example.com">
+                                    <input type="email" class="form-control" id="email" value="juan.perez@example.com"
+                                        aria-label="Correo electrónico">
                                 </div>
                                 <div class="mb-3">
                                     <label for="phone" class="form-label">Teléfono</label>
-                                    <input type="text" class="form-control" id="phone" value="+51 999 888 777">
+                                    <input type="text" class="form-control" id="phone" value="+51 999 888 777"
+                                        aria-label="Número de teléfono">
                                 </div>
                                 <div class="mb-3">
                                     <label for="description" class="form-label">Descripción</label>
-                                    <textarea class="form-control" id="description"
-                                        rows="3">Soy un profesional apasionado por el marketing digital y el análisis de datos...</textarea>
+                                    <textarea class="form-control" id="description" rows="3"
+                                        aria-label="Descripción">Soy un profesional apasionado por el marketing digital y el análisis de datos...</textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label for="lastInteraction" class="form-label">Última Interacción</label>
-                                    <input type="date" class="form-control" id="lastInteraction" value="2024-11-15">
+                                    <input type="date" class="form-control" id="lastInteraction" value="2024-11-15"
+                                        aria-label="Última interacción">
                                 </div>
-                                <button type="submit" class="btn btn-success w-100">Guardar Cambios</button>
+                                <button type="submit" class="btn btn-success w-100"
+                                    aria-label="Guardar cambios del perfil">Guardar Cambios</button>
                             </form>
                         </div>
                     </div>
@@ -132,7 +144,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-dark text-white text-center py-3" role="contentinfo" aria-label="Footer">
         <div class="container">
             <p>&copy; 2024 Networking Pro. Todos los derechos reservados.</p>
         </div>

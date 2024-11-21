@@ -7,45 +7,49 @@
     <title>Ofertas Laborales</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .bg-dark {
+            background-color: #1a1a1a !important;
+        }
+
+        .btn-primary:focus,
+        .btn-outline-primary:focus {
+            outline: 2px solid #ffd700;
+        }
+
+        .badge {
+            font-size: 1rem;
+            /* Tamaño de texto ajustado */
+        }
+    </style>
 </head>
 
 <body class="bg-light">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Barra de navegación principal">
         <div class="container">
-            <a class="navbar-brand" href="#">Networking Pro</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#" tabindex="0">Networking Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./beneficios.html">Beneficios</a></li>
-                    <!-- Dropdown Menu -->
+                    <li class="nav-item"><a class="nav-link" href="./index.html" tabindex="0">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./beneficios.html" tabindex="0">Beneficios</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            data-bs-toggle="dropdown" aria-expanded="false" tabindex="0">
                             Explorar
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="./explorar_ofertas.html">Ofertas Laborales</a></li>
-                            <li><a class="dropdown-item" href="./explorar_perfiles.html">Perfiles Profesionales</a></li>
-                            <li><a class="dropdown-item" href="./grupos.html">Grupos</a></li>
+                            <li><a class="dropdown-item" href="./explorar_ofertas.html" tabindex="0">Ofertas
+                                    Laborales</a></li>
+                            <li><a class="dropdown-item" href="./explorar_perfiles.html" tabindex="0">Perfiles
+                                    Profesionales</a></li>
+                            <li><a class="dropdown-item" href="./grupos.html" tabindex="0">Grupos</a></li>
                         </ul>
                     </li>
-                    <!-- Dropdown Menu -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dashboard
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="./dashbard_organizacion.html">organizativo</a></li>
-                            <li><a class="dropdown-item" href="./dashboard_graficas.html">Gráficas</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="./perfil.html">Perfil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./login.html">Ingresar</a></li>
                 </ul>
             </div>
         </div>
@@ -54,21 +58,21 @@
     <!-- Hero Section -->
     <section class="bg-primary text-white text-center py-5">
         <div class="container">
-            <h1 class="display-4">Encuentra Tu Próxima Oportunidad</h1>
-            <p class="lead">Explora las mejores ofertas laborales para impulsar tu carrera profesional.</p>
+            <h1 class="display-4" tabindex="0">Encuentra Tu Próxima Oportunidad</h1>
+            <p class="lead" tabindex="0">Explora las mejores ofertas laborales para impulsar tu carrera profesional.</p>
         </div>
     </section>
 
     <!-- Search and Filters Section -->
-    <section class="py-4">
+    <section class="py-4" aria-labelledby="search-filters-section">
         <div class="container">
             <div class="row">
                 <!-- Barra de búsqueda -->
                 <div class="col-md-8">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Buscar ofertas laborales..."
-                            aria-label="Buscar ofertas laborales">
-                        <button class="btn btn-primary" type="button">
+                            aria-label="Buscar ofertas laborales" tabindex="0">
+                        <button class="btn btn-primary" type="button" tabindex="0">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
@@ -76,13 +80,13 @@
                 <!-- Filtros -->
                 <div class="col-md-4">
                     <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="filterMenu"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                        data-bs-toggle="dropdown" aria-expanded="false" tabindex="0">
                         Filtrar por
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="filterMenu">
-                        <li><a class="dropdown-item" href="#">Ubicación</a></li>
-                        <li><a class="dropdown-item" href="#">Categoría</a></li>
-                        <li><a class="dropdown-item" href="#">Salario</a></li>
+                        <li><a class="dropdown-item" href="#" tabindex="0">Ubicación</a></li>
+                        <li><a class="dropdown-item" href="#" tabindex="0">Categoría</a></li>
+                        <li><a class="dropdown-item" href="#" tabindex="0">Salario</a></li>
                     </ul>
                 </div>
             </div>
@@ -90,9 +94,9 @@
     </section>
 
     <!-- Job Listings Section -->
-    <section class="py-5">
+    <section class="py-5" aria-labelledby="job-listings-section">
         <div class="container">
-            <h2 class="text-center mb-4">Ofertas Disponibles</h2>
+            <h2 id="job-listings-section" class="text-center mb-4" tabindex="0">Ofertas Disponibles</h2>
             <div class="row">
                 <!-- Oferta 1 -->
                 <div class="col-md-6">
@@ -100,12 +104,12 @@
                         <div class="card-body">
                             <h5 class="card-title">
                                 Desarrollador Frontend
-                                <span class="badge bg-success">Tiempo Completo</span>
+                                <span class="badge bg-success" tabindex="0">Tiempo Completo</span>
                             </h5>
-                            <p class="card-text">Empresa: Tech Innovations</p>
-                            <p class="card-text">Ubicación: Lima, Perú</p>
-                            <p class="card-text">Salario: $1500 - $2000</p>
-                            <a href="#" class="btn btn-primary btn-sm">Aplicar</a>
+                            <p class="card-text" tabindex="0">Empresa: Tech Innovations</p>
+                            <p class="card-text" tabindex="0">Ubicación: Lima, Perú</p>
+                            <p class="card-text" tabindex="0">Salario: $1500 - $2000</p>
+                            <a href="#" class="btn btn-primary btn-sm" tabindex="0">Aplicar</a>
                         </div>
                     </div>
                 </div>
@@ -115,12 +119,12 @@
                         <div class="card-body">
                             <h5 class="card-title">
                                 Especialista en Marketing Digital
-                                <span class="badge bg-primary">Remoto</span>
+                                <span class="badge bg-primary" tabindex="0">Remoto</span>
                             </h5>
-                            <p class="card-text">Empresa: Creative Solutions</p>
-                            <p class="card-text">Ubicación: Remoto</p>
-                            <p class="card-text">Salario: $1200 - $1800</p>
-                            <a href="#" class="btn btn-primary btn-sm">Aplicar</a>
+                            <p class="card-text" tabindex="0">Empresa: Creative Solutions</p>
+                            <p class="card-text" tabindex="0">Ubicación: Remoto</p>
+                            <p class="card-text" tabindex="0">Salario: $1200 - $1800</p>
+                            <a href="#" class="btn btn-primary btn-sm" tabindex="0">Aplicar</a>
                         </div>
                     </div>
                 </div>
@@ -130,12 +134,12 @@
                         <div class="card-body">
                             <h5 class="card-title">
                                 Diseñador UX/UI
-                                <span class="badge bg-warning text-dark">Urgente</span>
+                                <span class="badge bg-warning text-dark" tabindex="0">Urgente</span>
                             </h5>
-                            <p class="card-text">Empresa: Digital Creators</p>
-                            <p class="card-text">Ubicación: Bogotá, Colombia</p>
-                            <p class="card-text">Salario: $1300 - $1700</p>
-                            <a href="#" class="btn btn-primary btn-sm">Aplicar</a>
+                            <p class="card-text" tabindex="0">Empresa: Digital Creators</p>
+                            <p class="card-text" tabindex="0">Ubicación: Bogotá, Colombia</p>
+                            <p class="card-text" tabindex="0">Salario: $1300 - $1700</p>
+                            <a href="#" class="btn btn-primary btn-sm" tabindex="0">Aplicar</a>
                         </div>
                     </div>
                 </div>
@@ -145,12 +149,42 @@
                         <div class="card-body">
                             <h5 class="card-title">
                                 Analista de Datos
-                                <span class="badge bg-secondary">Contratación Inmediata</span>
+                                <span class="badge bg-secondary" tabindex="0">Contratación Inmediata</span>
                             </h5>
-                            <p class="card-text">Empresa: DataCorp</p>
-                            <p class="card-text">Ubicación: Ciudad de México, México</p>
-                            <p class="card-text">Salario: $1800 - $2500</p>
-                            <a href="#" class="btn btn-primary btn-sm">Aplicar</a>
+                            <p class="card-text" tabindex="0">Empresa: DataCorp</p>
+                            <p class="card-text" tabindex="0">Ubicación: Ciudad de México, México</p>
+                            <p class="card-text" tabindex="0">Salario: $1800 - $2500</p>
+                            <a href="#" class="btn btn-primary btn-sm" tabindex="0">Aplicar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Oferta 5 -->
+                <div class="col-md-6">
+                    <div class="card mb-3 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Ingeniero DevOps
+                                <span class="badge bg-danger" tabindex="0">Tiempo Completo</span>
+                            </h5>
+                            <p class="card-text" tabindex="0">Empresa: CloudTech</p>
+                            <p class="card-text" tabindex="0">Ubicación: Santiago, Chile</p>
+                            <p class="card-text" tabindex="0">Salario: $2000 - $3000</p>
+                            <a href="#" class="btn btn-primary btn-sm" tabindex="0">Aplicar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Oferta 6 -->
+                <div class="col-md-6">
+                    <div class="card mb-3 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Administrador de Sistemas
+                                <span class="badge bg-info text-dark" tabindex="0">Remoto</span>
+                            </h5>
+                            <p class="card-text" tabindex="0">Empresa: Global IT Services</p>
+                            <p class="card-text" tabindex="0">Ubicación: Remoto</p>
+                            <p class="card-text" tabindex="0">Salario: $1800 - $2500</p>
+                            <a href="#" class="btn btn-primary btn-sm" tabindex="0">Aplicar</a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +195,7 @@
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            <p>&copy; 2024 Networking Pro. Todos los derechos reservados.</p>
+            <p tabindex="0">&copy; 2024 Networking Pro. Todos los derechos reservados.</p>
         </div>
     </footer>
 

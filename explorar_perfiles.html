@@ -7,82 +7,79 @@
     <title>Explorar Perfiles Profesionales</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .bg-dark {
+            background-color: #1a1a1a !important;
+        }
+
+        .btn-primary:focus,
+        .btn-outline-primary:focus {
+            outline: 2px solid #ffd700;
+        }
+
+        .badge {
+            font-size: 1rem;
+        }
+    </style>
 </head>
 
 <body class="bg-light">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Barra de navegación principal">
         <div class="container">
-            <a class="navbar-brand" href="#">Networking Pro</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#" tabindex="0">Networking Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./beneficios.html">Beneficios</a></li>
-                    <!-- Dropdown Menu -->
+                    <li class="nav-item"><a class="nav-link" href="./index.html" tabindex="0">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./beneficios.html" tabindex="0">Beneficios</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" tabindex="0">
                             Explorar
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="./explorar_ofertas.html">Ofertas Laborales</a></li>
-                            <li><a class="dropdown-item" href="./explorar_perfiles.html">Perfiles Profesionales</a></li>
-                            <li><a class="dropdown-item" href="./grupos.html">Grupos</a></li>
+                            <li><a class="dropdown-item" href="./explorar_ofertas.html" tabindex="0">Ofertas Laborales</a></li>
+                            <li><a class="dropdown-item" href="./explorar_perfiles.html" tabindex="0">Perfiles Profesionales</a></li>
+                            <li><a class="dropdown-item" href="./grupos.html" tabindex="0">Grupos</a></li>
                         </ul>
                     </li>
-                    <!-- Dropdown Menu -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dashboard
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="./dashbard_organizacion.html">organizativo</a></li>
-                            <li><a class="dropdown-item" href="./dashboard_graficas.html">Gráficas</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="./perfil.html">Perfil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./login.html">Ingresar</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-primary text-white text-center py-5">
+    <section class="bg-primary text-white text-center py-5" aria-labelledby="hero-title">
         <div class="container">
-            <h1 class="display-4">Explora Perfiles Profesionales</h1>
-            <p class="lead">Conecta con los mejores talentos para tus proyectos.</p>
+            <h1 id="hero-title" class="display-4" tabindex="0">Explora Perfiles Profesionales</h1>
+            <p class="lead" tabindex="0">Conecta con los mejores talentos para tus proyectos.</p>
         </div>
     </section>
 
     <!-- Search and Filters Section -->
-    <section class="py-4">
+    <section class="py-4" aria-labelledby="search-section">
         <div class="container">
             <div class="row">
                 <!-- Barra de búsqueda -->
                 <div class="col-md-8">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Buscar profesionales..."
-                            aria-label="Buscar profesionales">
-                        <button class="btn btn-primary" type="button">
+                        <input type="text" class="form-control" placeholder="Buscar profesionales..." aria-label="Buscar profesionales" tabindex="0">
+                        <button class="btn btn-primary" type="button" tabindex="0">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
                 </div>
                 <!-- Filtros -->
                 <div class="col-md-4">
-                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="filterMenu"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="filterMenu" data-bs-toggle="dropdown" aria-expanded="false" tabindex="0">
                         Filtrar por
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="filterMenu">
-                        <li><a class="dropdown-item" href="#">Habilidades</a></li>
-                        <li><a class="dropdown-item" href="#">Ubicación</a></li>
-                        <li><a class="dropdown-item" href="#">Experiencia</a></li>
+                        <li><a class="dropdown-item" href="#" tabindex="0">Habilidades</a></li>
+                        <li><a class="dropdown-item" href="#" tabindex="0">Ubicación</a></li>
+                        <li><a class="dropdown-item" href="#" tabindex="0">Experiencia</a></li>
                     </ul>
                 </div>
             </div>
@@ -90,9 +87,9 @@
     </section>
 
     <!-- Profiles Listings Section -->
-    <section class="py-5">
+    <section class="py-5" aria-labelledby="profiles-list-section">
         <div class="container">
-            <h2 class="text-center mb-4">Profesionales Disponibles</h2>
+            <h2 id="profiles-list-section" class="text-center mb-4" tabindex="0">Profesionales Disponibles</h2>
             <div class="row">
                 <!-- Perfil 1 -->
                 <div class="col-md-6">
@@ -100,12 +97,12 @@
                         <div class="card-body">
                             <h5 class="card-title">
                                 Ana Martínez
-                                <span class="badge bg-success">Disponible</span>
+                                <span class="badge bg-success" tabindex="0">Disponible</span>
                             </h5>
-                            <p class="card-text">Habilidades: Marketing Digital, Estrategia de Contenidos</p>
-                            <p class="card-text">Ubicación: Lima, Perú</p>
-                            <p class="card-text">Experiencia: 5 años</p>
-                            <a href="#" class="btn btn-primary btn-sm">Ver Perfil</a>
+                            <p class="card-text" tabindex="0">Habilidades: Marketing Digital, Estrategia de Contenidos</p>
+                            <p class="card-text" tabindex="0">Ubicación: Lima, Perú</p>
+                            <p class="card-text" tabindex="0">Experiencia: 5 años</p>
+                            <a href="#" class="btn btn-primary btn-sm" tabindex="0">Ver Perfil</a>
                         </div>
                     </div>
                 </div>
@@ -115,12 +112,12 @@
                         <div class="card-body">
                             <h5 class="card-title">
                                 Carlos Gutiérrez
-                                <span class="badge bg-primary">Remoto</span>
+                                <span class="badge bg-primary" tabindex="0">Remoto</span>
                             </h5>
-                            <p class="card-text">Habilidades: Desarrollo Frontend, React, Vue</p>
-                            <p class="card-text">Ubicación: Remoto</p>
-                            <p class="card-text">Experiencia: 3 años</p>
-                            <a href="#" class="btn btn-primary btn-sm">Ver Perfil</a>
+                            <p class="card-text" tabindex="0">Habilidades: Desarrollo Frontend, React, Vue</p>
+                            <p class="card-text" tabindex="0">Ubicación: Remoto</p>
+                            <p class="card-text" tabindex="0">Experiencia: 3 años</p>
+                            <a href="#" class="btn btn-primary btn-sm" tabindex="0">Ver Perfil</a>
                         </div>
                     </div>
                 </div>
@@ -130,27 +127,12 @@
                         <div class="card-body">
                             <h5 class="card-title">
                                 Lucía Fernández
-                                <span class="badge bg-warning text-dark">Proyectos Urgentes</span>
+                                <span class="badge bg-warning text-dark" tabindex="0">Proyectos Urgentes</span>
                             </h5>
-                            <p class="card-text">Habilidades: Diseño UX/UI, Prototipado, Figma</p>
-                            <p class="card-text">Ubicación: Bogotá, Colombia</p>
-                            <p class="card-text">Experiencia: 4 años</p>
-                            <a href="#" class="btn btn-primary btn-sm">Ver Perfil</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Perfil 4 -->
-                <div class="col-md-6">
-                    <div class="card mb-3 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                Javier López
-                                <span class="badge bg-secondary">Contratación Inmediata</span>
-                            </h5>
-                            <p class="card-text">Habilidades: Análisis de Datos, Python, SQL</p>
-                            <p class="card-text">Ubicación: Ciudad de México, México</p>
-                            <p class="card-text">Experiencia: 6 años</p>
-                            <a href="#" class="btn btn-primary btn-sm">Ver Perfil</a>
+                            <p class="card-text" tabindex="0">Habilidades: Diseño UX/UI, Prototipado, Figma</p>
+                            <p class="card-text" tabindex="0">Ubicación: Bogotá, Colombia</p>
+                            <p class="card-text" tabindex="0">Experiencia: 4 años</p>
+                            <a href="#" class="btn btn-primary btn-sm" tabindex="0">Ver Perfil</a>
                         </div>
                     </div>
                 </div>
@@ -159,9 +141,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-dark text-white text-center py-3" aria-labelledby="footer-section">
         <div class="container">
-            <p>&copy; 2024 Networking Pro. Todos los derechos reservados.</p>
+            <p id="footer-section" tabindex="0">&copy; 2024 Networking Pro. Todos los derechos reservados.</p>
         </div>
     </footer>
 

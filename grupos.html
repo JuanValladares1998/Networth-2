@@ -7,82 +7,79 @@
     <title>Explorar Grupos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .bg-dark {
+            background-color: #1a1a1a !important;
+        }
+
+        .btn-primary:focus,
+        .btn-outline-primary:focus {
+            outline: 2px solid #ffd700;
+        }
+
+        .badge {
+            font-size: 1rem;
+        }
+    </style>
 </head>
 
 <body class="bg-light">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Barra de navegación principal">
         <div class="container">
-            <a class="navbar-brand" href="#">Networking Pro</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#" tabindex="0">Networking Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./beneficios.html">Beneficios</a></li>
-                    <!-- Dropdown Menu -->
+                    <li class="nav-item"><a class="nav-link" href="./index.html" tabindex="0">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./beneficios.html" tabindex="0">Beneficios</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" tabindex="0">
                             Explorar
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="./explorar_ofertas.html">Ofertas Laborales</a></li>
-                            <li><a class="dropdown-item" href="./explorar_perfiles.html">Perfiles Profesionales</a></li>
-                            <li><a class="dropdown-item" href="./grupos.html">Grupos</a></li>
+                            <li><a class="dropdown-item" href="./explorar_ofertas.html" tabindex="0">Ofertas Laborales</a></li>
+                            <li><a class="dropdown-item" href="./explorar_perfiles.html" tabindex="0">Perfiles Profesionales</a></li>
+                            <li><a class="dropdown-item" href="./grupos.html" tabindex="0">Grupos</a></li>
                         </ul>
                     </li>
-                    <!-- Dropdown Menu -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dashboard
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="./dashbard_organizacion.html">organizativo</a></li>
-                            <li><a class="dropdown-item" href="./dashboard_graficas.html">Gráficas</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="./perfil.html">Perfil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./login.html">Ingresar</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-primary text-white text-center py-5">
+    <section class="bg-primary text-white text-center py-5" aria-labelledby="hero-title">
         <div class="container">
-            <h1 class="display-4">Explora Grupos y Comunidades</h1>
-            <p class="lead">Únete a grupos y conecta con personas con intereses comunes.</p>
+            <h1 id="hero-title" class="display-4" tabindex="0">Explora Grupos y Comunidades</h1>
+            <p class="lead" tabindex="0">Únete a grupos y conecta con personas con intereses comunes.</p>
         </div>
     </section>
 
     <!-- Search and Filters Section -->
-    <section class="py-4">
+    <section class="py-4" aria-labelledby="search-section">
         <div class="container">
             <div class="row">
                 <!-- Barra de búsqueda -->
                 <div class="col-md-8">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Buscar grupos..."
-                            aria-label="Buscar grupos">
-                        <button class="btn btn-primary" type="button">
+                        <input type="text" class="form-control" placeholder="Buscar grupos..." aria-label="Buscar grupos" tabindex="0">
+                        <button class="btn btn-primary" type="button" tabindex="0">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
                 </div>
                 <!-- Filtros -->
                 <div class="col-md-4">
-                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="filterMenu"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="filterMenu" data-bs-toggle="dropdown" aria-expanded="false" tabindex="0">
                         Filtrar por
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="filterMenu">
-                        <li><a class="dropdown-item" href="#">Categoría</a></li>
-                        <li><a class="dropdown-item" href="#">Ubicación</a></li>
-                        <li><a class="dropdown-item" href="#">Popularidad</a></li>
+                        <li><a class="dropdown-item" href="#" tabindex="0">Categoría</a></li>
+                        <li><a class="dropdown-item" href="#" tabindex="0">Ubicación</a></li>
+                        <li><a class="dropdown-item" href="#" tabindex="0">Popularidad</a></li>
                     </ul>
                 </div>
             </div>
@@ -90,19 +87,18 @@
     </section>
 
     <!-- Groups Listings Section -->
-    <section class="py-5">
+    <section class="py-5" aria-labelledby="groups-list-section">
         <div class="container">
-            <h2 class="text-center mb-4">Grupos Disponibles</h2>
+            <h2 id="groups-list-section" class="text-center mb-4" tabindex="0">Grupos Disponibles</h2>
             <div class="row">
                 <!-- Grupo 1 -->
                 <div class="col-md-6">
                     <div class="card mb-3 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Marketing Digital</h5>
-                            <p class="card-text">Conéctate con expertos en estrategias de marketing y análisis de
-                                campañas.</p>
-                            <p class="card-text"><strong>Miembros:</strong> 1,250</p>
-                            <button class="btn btn-primary btn-sm">Unirse al Grupo</button>
+                            <h5 class="card-title" tabindex="0">Marketing Digital</h5>
+                            <p class="card-text" tabindex="0">Conéctate con expertos en estrategias de marketing y análisis de campañas.</p>
+                            <p class="card-text" tabindex="0"><strong>Miembros:</strong> 1,250</p>
+                            <button class="btn btn-primary btn-sm" tabindex="0">Unirse al Grupo</button>
                         </div>
                     </div>
                 </div>
@@ -110,11 +106,10 @@
                 <div class="col-md-6">
                     <div class="card mb-3 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Desarrollo Frontend</h5>
-                            <p class="card-text">Aprende y comparte conocimientos sobre frameworks como React y Angular.
-                            </p>
-                            <p class="card-text"><strong>Miembros:</strong> 950</p>
-                            <button class="btn btn-primary btn-sm">Unirse al Grupo</button>
+                            <h5 class="card-title" tabindex="0">Desarrollo Frontend</h5>
+                            <p class="card-text" tabindex="0">Aprende y comparte conocimientos sobre frameworks como React y Angular.</p>
+                            <p class="card-text" tabindex="0"><strong>Miembros:</strong> 950</p>
+                            <button class="btn btn-primary btn-sm" tabindex="0">Unirse al Grupo</button>
                         </div>
                     </div>
                 </div>
@@ -122,10 +117,10 @@
                 <div class="col-md-6">
                     <div class="card mb-3 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Diseño UX/UI</h5>
-                            <p class="card-text">Explora las últimas tendencias en diseño de experiencia de usuario.</p>
-                            <p class="card-text"><strong>Miembros:</strong> 850</p>
-                            <button class="btn btn-primary btn-sm">Unirse al Grupo</button>
+                            <h5 class="card-title" tabindex="0">Recursos Humanos</h5>
+                            <p class="card-text" tabindex="0">Conéctate con expertos en estrategias de RRHH.</p>
+                            <p class="card-text" tabindex="0"><strong>Miembros:</strong> 2,000</p>
+                            <button class="btn btn-primary btn-sm" tabindex="0">Unirse al Grupo</button>
                         </div>
                     </div>
                 </div>
@@ -133,11 +128,10 @@
                 <div class="col-md-6">
                     <div class="card mb-3 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Data Science</h5>
-                            <p class="card-text">Descubre el mundo del análisis de datos y la inteligencia artificial.
-                            </p>
-                            <p class="card-text"><strong>Miembros:</strong> 1,100</p>
-                            <button class="btn btn-primary btn-sm">Unirse al Grupo</button>
+                            <h5 class="card-title" tabindex="0">Ingenieria de Software</h5>
+                            <p class="card-text" tabindex="0">Aprende y comparte conocimientos sobre Software.</p>
+                            <p class="card-text" tabindex="0"><strong>Miembros:</strong> 3,000</p>
+                            <button class="btn btn-primary btn-sm" tabindex="0">Unirse al Grupo</button>
                         </div>
                     </div>
                 </div>
@@ -146,9 +140,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-dark text-white text-center py-3" aria-labelledby="footer-section">
         <div class="container">
-            <p>&copy; 2024 Networking Pro. Todos los derechos reservados.</p>
+            <p id="footer-section" tabindex="0">&copy; 2024 Networking Pro. Todos los derechos reservados.</p>
         </div>
     </footer>
 

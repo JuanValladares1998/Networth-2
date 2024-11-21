@@ -10,74 +10,83 @@
 
 <body class="bg-light">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand" href="#">Networking Pro</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#" aria-label="Networking Pro">Networking Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./beneficios.html">Beneficios</a></li>
-                    <!-- Dropdown Menu -->
+                    <li class="nav-item"><a class="nav-link" href="./index.html" aria-label="Inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./beneficios.html"
+                            aria-label="Beneficios">Beneficios</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Explorar opciones">
                             Explorar
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="./explorar_ofertas.html">Ofertas Laborales</a></li>
-                            <li><a class="dropdown-item" href="./explorar_perfiles.html">Perfiles Profesionales</a></li>
-                            <li><a class="dropdown-item" href="./grupos.html">Grupos</a></li>
+                            <li><a class="dropdown-item" href="./explorar_ofertas.html"
+                                    aria-label="Ofertas laborales">Ofertas Laborales</a></li>
+                            <li><a class="dropdown-item" href="./explorar_perfiles.html"
+                                    aria-label="Perfiles profesionales">Perfiles Profesionales</a></li>
+                            <li><a class="dropdown-item" href="./grupos.html" aria-label="Grupos">Grupos</a></li>
                         </ul>
                     </li>
-                    <!-- Dropdown Menu -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="dashboardDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Dashboard opciones">
                             Dashboard
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="./dashbard_organizacion.html">organizativo</a></li>
-                            <li><a class="dropdown-item" href="./dashboard_graficas.html">Gráficas</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="dashboardDropdown">
+                            <li><a class="dropdown-item" href="./dashbard_organizacion.html"
+                                    aria-label="Dashboard organizativo">Organizativo</a></li>
+                            <li><a class="dropdown-item" href="./dashboard_graficas.html"
+                                    aria-label="Dashboard gráficas">Gráficas</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="./perfil.html">Perfil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./login.html">Ingresar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./perfil.html" aria-label="Perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./login.html" aria-label="Ingresar">Ingresar</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="container d-flex justify-content-center align-items-center vh-100">
+    <!-- Login Section -->
+    <section class="container d-flex justify-content-center align-items-center vh-100" role="region"
+        aria-labelledby="login-heading">
         <div class="card shadow-lg" style="width: 400px;">
             <div class="card-body">
-                <h3 class="card-title text-center mb-4">Iniciar Sesión</h3>
-                <form>
+                <h3 id="login-heading" class="card-title text-center mb-4">Iniciar Sesión</h3>
+                <form aria-label="Formulario de inicio de sesión">
                     <!-- Email Input -->
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="tuemail@example.com" required>
+                        <input type="email" class="form-control" id="email" placeholder="tuemail@example.com" required
+                            aria-required="true" aria-label="Correo electrónico">
                     </div>
                     <!-- Password Input -->
                     <div class="mb-3">
                         <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                        <input type="password" class="form-control" id="password" placeholder="Contraseña" required
+                            aria-required="true" aria-label="Contraseña">
                     </div>
                     <!-- Remember Me -->
                     <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                        <input class="form-check-input" type="checkbox" id="rememberMe" aria-label="Recuérdame">
                         <label class="form-check-label" for="rememberMe">Recuérdame</label>
                     </div>
                     <!-- Submit Button -->
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                        <button type="submit" class="btn btn-primary" aria-label="Iniciar sesión">Iniciar
+                            Sesión</button>
                     </div>
                     <!-- Links -->
                     <div class="text-center mt-3">
-                        <a href="#">¿Olvidaste tu contraseña?</a> <br>
-                        <a href="#">Crear una cuenta nueva</a>
+                        <a href="#" aria-label="Olvidaste tu contraseña">¿Olvidaste tu contraseña?</a> <br>
+                        <a href="#" aria-label="Crear una cuenta nueva">Crear una cuenta nueva</a>
                     </div>
                 </form>
             </div>
@@ -85,7 +94,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-dark text-white text-center py-3" role="contentinfo" aria-label="Footer">
         <div class="container">
             <p>&copy; 2024 Networking Pro. Todos los derechos reservados.</p>
         </div>
