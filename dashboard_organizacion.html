@@ -12,43 +12,65 @@
         .bg-dark {
             background-color: #1a1a1a !important;
         }
+
         .text-dark-bg-light {
             color: #000;
         }
+
         .btn-primary:focus,
         .btn-outline-primary:focus {
-            outline: 2px solid #ffd700; /* Indicador visual para foco */
+            outline: 2px solid #ffd700;
+            /* Indicador visual para foco */
         }
+
         .badge {
-            font-size: 1rem; /* Aumenta la legibilidad de las etiquetas */
+            font-size: 1rem;
+            /* Aumenta la legibilidad de las etiquetas */
         }
     </style>
 </head>
 
 <body class="bg-light">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navegación principal">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand" href="#">Networking Pro</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+            <a class="navbar-brand" href="#" aria-label="Networking Pro">Networking Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html" tabindex="0">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./beneficios.html" tabindex="0">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html" aria-label="Inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./beneficios.html"
+                            aria-label="Beneficios">Beneficios</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" tabindex="0">
+                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Explorar opciones">
                             Explorar
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="./explorar_ofertas.html" tabindex="0">Ofertas Laborales</a></li>
-                            <li><a class="dropdown-item" href="./explorar_perfiles.html" tabindex="0">Perfiles Profesionales</a></li>
-                            <li><a class="dropdown-item" href="./grupos.html" tabindex="0">Grupos</a></li>
+                            <li><a class="dropdown-item" href="./explorar_ofertas.html"
+                                    aria-label="Ofertas laborales">Ofertas Laborales</a></li>
+                            <li><a class="dropdown-item" href="./explorar_perfiles.html"
+                                    aria-label="Perfiles profesionales">Perfiles Profesionales</a></li>
+                            <li><a class="dropdown-item" href="./grupos.html" aria-label="Grupos">Grupos</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="./perfil.html" tabindex="0">Perfil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./login.html" tabindex="0">Ingresar</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dashboardDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="Dashboard opciones">
+                            Dashboard
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dashboardDropdown">
+                            <li><a class="dropdown-item" href="./dashboard_organizacion.html"
+                                    aria-label="Dashboard organizativo">Organizativo</a></li>
+                            <li><a class="dropdown-item" href="./dashboard_graficas.html"
+                                    aria-label="Dashboard gráficas">Gráficas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./perfil.html" aria-label="Perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./login.html" aria-label="Ingresar">Ingresar</a></li>
                 </ul>
             </div>
         </div>
@@ -61,9 +83,12 @@
             <!-- Button Group -->
             <div class="text-center mb-4">
                 <div class="btn-group" role="group" aria-label="Opciones del Dashboard">
-                    <button type="button" class="btn btn-primary" onclick="scrollToSection('reminders')" tabindex="0">Recordatorios</button>
-                    <button type="button" class="btn btn-secondary" onclick="scrollToSection('categories')" tabindex="0">Categorías</button>
-                    <button type="button" class="btn btn-info" onclick="scrollToSection('calendar')" tabindex="0">Calendario</button>
+                    <button type="button" class="btn btn-primary" onclick="scrollToSection('reminders')"
+                        tabindex="0">Recordatorios</button>
+                    <button type="button" class="btn btn-secondary" onclick="scrollToSection('categories')"
+                        tabindex="0">Categorías</button>
+                    <button type="button" class="btn btn-info" onclick="scrollToSection('calendar')"
+                        tabindex="0">Calendario</button>
                 </div>
             </div>
             <div class="row">
@@ -74,7 +99,8 @@
                             <h5 id="reminders-title" class="card-title" tabindex="0">
                                 <i class="fas fa-bell text-warning" aria-hidden="true"></i> Recordatorios Automáticos
                             </h5>
-                            <p class="card-text" tabindex="0">Estos son los contactos con los que necesitas hacer seguimiento:</p>
+                            <p class="card-text" tabindex="0">Estos son los contactos con los que necesitas hacer
+                                seguimiento:</p>
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     <strong>Ana Martínez</strong>
@@ -108,7 +134,8 @@
                                 <span class="badge bg-primary me-2 mb-2" tabindex="0">Clientes</span>
                                 <span class="badge bg-secondary me-2 mb-2" tabindex="0">Proveedores</span>
                                 <span class="badge bg-success me-2 mb-2" tabindex="0">Colaboradores</span>
-                                <span class="badge bg-warning text-dark me-2 mb-2" tabindex="0">Socios Estratégicos</span>
+                                <span class="badge bg-warning text-dark me-2 mb-2" tabindex="0">Socios
+                                    Estratégicos</span>
                                 <span class="badge bg-danger me-2 mb-2" tabindex="0">Pendientes</span>
                             </div>
                             <button class="btn btn-outline-secondary mt-3" tabindex="0">Administrar Categorías</button>
@@ -123,10 +150,14 @@
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 id="calendar-title" class="card-title" tabindex="0">
-                                <i class="fas fa-calendar-alt text-primary" aria-hidden="true"></i> Calendarios Digitales
+                                <i class="fas fa-calendar-alt text-primary" aria-hidden="true"></i> Calendarios
+                                Digitales
                             </h5>
-                            <p class="card-text" tabindex="0">Gestiona tus eventos y reuniones directamente desde tu calendario integrado:</p>
-                            <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=America/Lima" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+                            <p class="card-text" tabindex="0">Gestiona tus eventos y reuniones directamente desde tu
+                                calendario integrado:</p>
+                            <iframe
+                                src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=America/Lima"
+                                style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
                             <button class="btn btn-outline-primary mt-3" tabindex="0">Sincronizar Calendario</button>
                         </div>
                     </div>
